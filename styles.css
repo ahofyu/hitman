@@ -27,12 +27,39 @@
   --crust: rgb(24, 25, 38);
 }
 
+html,
 body {
+  height: 100%;
+  margin: 0;
   background-color: var(--base);
-  color: var(--mauve);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
 }
 
-.mauveColorBox {
+.bigBox {
   border: 3px solid var(--mauve);
+  margin: 5%;
   border-radius: 50px;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+}
+
+.hitItem {
+  border: 3px solid var(--mauve);
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 50px;
+  flex: 1;
+}
+
+.hitItemContainer:nth-of-type(1) {
+  padding-left: 0.5%;
+}
+
+.hitItemContainer:nth-of-type(5) {
+  padding-right: 0.5%;
 }
